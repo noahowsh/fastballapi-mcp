@@ -44,7 +44,9 @@ def call(key, tool, args=None):
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             LAST_REMAINING = resp.headers.get("X-Credits-Remaining", LAST_REMAINING)
-            return json.load(resp)
+            body = json.load(resp)
+            # Every response is wrapped as {"data": ...}.
+            return body.get("data", body) if isinstance(body, dict) else body
     except urllib.error.HTTPError as err:
         raise ApiError(describe(err, tool)) from None
     except urllib.error.URLError as err:

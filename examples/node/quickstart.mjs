@@ -33,7 +33,8 @@ async function call(tool, args = {}) {
   try {
     body = JSON.parse(text);
   } catch {}
-  if (res.ok) return body;
+  // Every response is wrapped as {"data": ...}.
+  if (res.ok) return body && body.data !== undefined ? body.data : body;
   const message = body.message || body.error || res.statusText;
   if (res.status === 401) throw new Error(`401 unauthorized. Check ${KEY_ENV}. ${message}`);
   if (res.status === 402) {
