@@ -49,6 +49,21 @@ curl -X POST https://mcp.fastballapi.com/v1/list_teams -H "x-api-key: YOUR_API_K
 
 Every tool is `POST /v1/{tool}` with a JSON body.
 
+## Examples
+
+Runnable Python (standard library only) and Node 18+ (no dependencies) examples live in [`examples/`](examples/):
+
+- [`examples/python/quickstart.py`](examples/python/quickstart.py) and [`examples/node/quickstart.mjs`](examples/node/quickstart.mjs): schedule plus a headline call.
+- [`examples/python/mlb_pitch_mix_and_props.py`](examples/python/mlb_pitch_mix_and_props.py): A pitcher's arsenal (usage, velocity, whiff rate and ball rate per pitch type) followed by his strikeout prop lines against what he actually threw, game by game.
+
+```bash
+export FASTBALLAPI_API_KEY=your_key
+python3 examples/python/quickstart.py
+node examples/node/quickstart.mjs
+```
+
+See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://fastballapi.com/signup.
+
 ## Tools (20)
 
 | Tool | What it returns |
