@@ -1,0 +1,1 @@
+{"type": "object", "properties": {"apiKey": {"type": "string", "title": "API Key", "description": "Your FastballAPI key. Free key with 500 credits at fastballapi.com/signup", "x-from": {"header": "x-api-key"}}}, "required": ["apiKey"]}

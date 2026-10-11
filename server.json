@@ -1,0 +1,138 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.noahowsh/fastballapi",
+  "title": "FastballAPI",
+  "description": "MLB since 2015 plus college: pitches, plate appearances, box scores, odds by book. REST and MCP.",
+  "version": "1.1.4",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/noahowsh/fastballapi-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://github.com/noahowsh/fastballapi-mcp/raw/main/assets/logo-400x400.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "400x400"
+      ]
+    }
+  ],
+  "homepage": "https://fastballapi.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.fastballapi.com/mcp",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Your FastballAPI API key. Get a free key with 500 credits at fastballapi.com/signup",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "list_teams",
+      "description": "Team ids, abbreviations and colours for a season",
+      "readOnlyHint": true
+    },
+    {
+      "name": "search_players",
+      "description": "Find players by name",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_games",
+      "description": "Games with runs, hits and errors by season, date, range or team",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_schedule",
+      "description": "Upcoming games with the median line across sportsbooks",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_standings",
+      "description": "Standings from every final game, with run differential and Pythagorean record",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_injuries",
+      "description": "The latest injury report",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_ratings",
+      "description": "Our team Elo ratings, ranked",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_game",
+      "description": "One game: every batting and pitching line, each book's line, win probability",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_player",
+      "description": "Season batting (AVG, OBP, SLG, OPS, RE24) and pitching (ERA, WHIP, K/9)",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_player_games",
+      "description": "A player's full batting and pitching game log",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_leaders",
+      "description": "Season leaders among qualified batters and pitchers",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_team_stats",
+      "description": "Runs for and against, team batting and opponents' batting",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_pitch_mix",
+      "description": "A pitcher's arsenal: usage, velocity, whiff rate per pitch type",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_odds",
+      "description": "Every sportsbook's moneyline, run line and total for a game (5) or a day (10)",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_plate_appearances",
+      "description": "Plate-appearance play-by-play with base-out state, batted ball, win probability, RE24",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_pitches",
+      "description": "Pitch-by-pitch: count, type, velocity, location, result",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_spray_chart",
+      "description": "Where a batter or team hits the ball, by trajectory and field",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_line_movement",
+      "description": "Snapshots of each sportsbook's line before first pitch",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_player_props",
+      "description": "Player prop lines by sportsbook, opening and closing",
+      "readOnlyHint": true
+    },
+    {
+      "name": "get_prop_history",
+      "description": "A player's prop lines against the result, game by game",
+      "readOnlyHint": true
+    }
+  ]
+}
