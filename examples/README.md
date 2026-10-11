@@ -1,6 +1,6 @@
 # FastballAPI examples
 
-Runnable examples for the [FastballAPI API](https://fastballapi.com). Python uses only the standard library (`urllib` and `json`). Node uses the built-in `fetch` (Node 18 or newer). No packages to install.
+Runnable examples for the [FastballAPI](https://fastballapi.com). Python uses only the standard library (`urllib` and `json`). Node uses the built-in `fetch` (Node 18 or newer). No packages to install.
 
 MLB and college baseball data API. Every tool is a REST call: `POST https://mcp.fastballapi.com/v1/<tool_name>` with a JSON body and an `x-api-key` header. The same tools are available over MCP at `https://mcp.fastballapi.com/mcp`.
 
