@@ -1,0 +1,11 @@
+{
+  "name": "fastballapi-skills",
+  "description": "16 Claude skills for baseball analytics and betting models with FastballAPI: data lookups, metrics, feature engineering, walk-forward validation, devigging, edge detection and backtests.",
+  "version": "1.0.0",
+  "author": {
+    "name": "FastballAPI"
+  },
+  "homepage": "https://fastballapi.com",
+  "repository": "https://github.com/noahowsh/fastballapi-mcp",
+  "license": "MIT"
+}
