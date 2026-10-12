@@ -2,7 +2,7 @@
 
 [![Smithery](https://img.shields.io/badge/Smithery-listed-ff5601?style=flat-square)](https://smithery.ai/servers/noahowsh/FastballAPI) [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-listed-0b7285?style=flat-square)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.noahowsh/fastballapi)
 
-**The baseball data API.** Pitch-by-pitch data with pitch type, velocity and location, every plate appearance with base-out state and the batted ball, box scores, standings, our own ratings and run values, sportsbook lines by book and MLB player prop lines. MLB since 2015 plus the NCAA Division I games ESPN carries. REST API and MCP server. 500 free credits, no card.
+**The baseball data API.** Pitch-by-pitch data with pitch type, velocity and location, every plate appearance with base-out state and the batted ball, box scores, standings, our own ratings and run values, sportsbook lines by book and MLB player prop lines. MLB since 2015 plus the NCAA Division I games ESPN carries. REST API and MCP server. 500 free credits every month, no card.
 
 Website: https://fastballapi.com · Docs: https://fastballapi.com/docs · Get a key: https://fastballapi.com/signup
 
@@ -16,6 +16,16 @@ Claude: [calls get_plate_appearances]
 You:    "How often has Shohei Ohtani gone over his total bases line since 2023?"
 Claude: [calls get_prop_history]
 ```
+
+## Skills
+
+This repo also ships 16 free Claude skills in [`skills/`](skills/) that turn Claude into a baseball analyst: pitch mix and whiff rate, run value, spray charts, Pythagorean record, game previews, odds analysis, prop modeling (pitcher strikeouts, hits, total bases), edge detection and backtesting. Each skill names the FastballAPI tools it calls and what they cost.
+
+```bash
+git clone https://github.com/noahowsh/fastballapi-mcp.git
+```
+
+Point Claude at the `skills/` folder, connect the MCP server below, and ask. The `dispatch` skill routes a request to the right two or three skills. Full list: [`skills/README.md`](skills/README.md).
 
 ## Quick start
 
@@ -101,9 +111,21 @@ Leagues: mlb (default), ncaabase (NCAA Division I games ESPN carries; pitch tool
 
 Coverage by season, read live from the database: https://fastballapi.com/docs
 
+## Useful pages
+
+- [Docs](https://fastballapi.com/docs): every endpoint with parameters and a live example response
+- [Data atlas](https://fastballapi.com/docs/atlas): what exists, which tool exposes it, coverage by season
+- [MLB odds](https://fastballapi.com/odds): upcoming moneylines, run lines and totals by sportsbook
+- [Guides](https://fastballapi.com/guides): pitch data for a model, pitch mix and whiff rate, Pythagorean standings, run value with runners in scoring position, spray charts
+- [Data](https://fastballapi.com/data): [pitch-by-pitch](https://fastballapi.com/data/mlb-pitch-by-pitch), [spray charts](https://fastballapi.com/data/mlb-spray-chart-data), [odds history](https://fastballapi.com/data/mlb-odds-history), [player props](https://fastballapi.com/data/player-props)
+- [College baseball](https://fastballapi.com/college-baseball): the NCAA Division I games ESPN carries
+- [Pricing](https://fastballapi.com/pricing): free tier and paid plans
+- Comparisons: [vs pybaseball](https://fastballapi.com/compare/pybaseball), [vs BallDontLie](https://fastballapi.com/compare/balldontlie-mlb), [vs Sportradar](https://fastballapi.com/compare/sportradar-mlb), [vs the MLB Stats API](https://fastballapi.com/compare/mlb-stats-api)
+- [Glossary](https://fastballapi.com/glossary)
+
 ## Pricing
 
-500 free credits on signup, no card. Plans: Starter $19/mo (10,000 credits), Pro $49/mo (30,000), Scale $149/mo (125,000). Wallet top-ups from $5, never expire. https://fastballapi.com/pricing
+500 free credits every month, no card. Plans: Starter $19/mo (10,000 credits), Pro $49/mo (30,000), Scale $149/mo (125,000). Wallet top-ups from $5, never expire. https://fastballapi.com/pricing
 
 ## Attribution
 
