@@ -1,0 +1,14 @@
+{
+  "name": "fastballapi",
+  "description": "Baseball analytics skills for Claude Code, wired to the FastballAPI MCP server",
+  "owner": {
+    "name": "FastballAPI"
+  },
+  "plugins": [
+    {
+      "name": "fastballapi-skills",
+      "source": "./",
+      "description": "16 baseball analytics and betting-model skills"
+    }
+  ]
+}

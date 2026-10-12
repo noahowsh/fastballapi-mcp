@@ -25,6 +25,15 @@ This repo also ships 16 free Claude skills in [`skills/`](skills/) that turn Cla
 git clone https://github.com/noahowsh/fastballapi-mcp.git
 ```
 
+Or install them as a Claude Code plugin:
+
+```
+/plugin marketplace add noahowsh/fastballapi-mcp
+/plugin install fastballapi-skills@fastballapi
+```
+
+Or with the skills CLI: `npx skills add noahowsh/fastballapi-mcp`.
+
 Point Claude at the `skills/` folder, connect the MCP server below, and ask. The `dispatch` skill routes a request to the right two or three skills. Full list: [`skills/README.md`](skills/README.md).
 
 ## Quick start
