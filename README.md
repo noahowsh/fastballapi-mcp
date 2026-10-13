@@ -125,6 +125,7 @@ Coverage by season, read live from the database: https://fastballapi.com/docs
 - [Docs](https://fastballapi.com/docs): every endpoint with parameters and a live example response
 - [Data atlas](https://fastballapi.com/docs/atlas): what exists, which tool exposes it, coverage by season
 - [MLB odds](https://fastballapi.com/odds): upcoming moneylines, run lines and totals by sportsbook
+- [MLB player props today](https://fastballapi.com/props): hits, home runs, total bases, RBIs and pitcher strikeouts, best price per player across books
 - [Guides](https://fastballapi.com/guides): pitch data for a model, pitch mix and whiff rate, Pythagorean standings, run value with runners in scoring position, spray charts
 - [Data](https://fastballapi.com/data): [pitch-by-pitch](https://fastballapi.com/data/mlb-pitch-by-pitch), [spray charts](https://fastballapi.com/data/mlb-spray-chart-data), [odds history](https://fastballapi.com/data/mlb-odds-history), [player props](https://fastballapi.com/data/player-props)
 - [College baseball](https://fastballapi.com/college-baseball): the NCAA Division I games ESPN carries
