@@ -144,3 +144,28 @@ Baseball data from public ESPN data; sportsbook lines and player props from ESPN
 ## License
 
 MIT for the contents of this repository. Data terms as above.
+
+## Use with Codex
+
+Add this repo as a Codex plugin marketplace, then install the plugin:
+
+```bash
+codex plugin marketplace add noahowsh/fastballapi-mcp
+```
+
+Then open the plugin directory in Codex and install `fastballapi-skills` from the `fastballapi` marketplace. The plugin bundles the skills in `skills/` and the FastballAPI MCP server (https://mcp.fastballapi.com/mcp). Set your key first (free at https://fastballapi.com/signup):
+
+```bash
+export FASTBALLAPI_API_KEY=your_key
+```
+
+Codex sends it as a bearer token.
+
+## Use with Gemini CLI
+
+```bash
+export FASTBALLAPI_API_KEY=your_key
+gemini extensions install https://github.com/noahowsh/fastballapi-mcp
+```
+
+The extension adds the FastballAPI MCP server (https://mcp.fastballapi.com/mcp) and sends the key in the `x-api-key` header. Get a free key (500 credits a month) at https://fastballapi.com/signup.

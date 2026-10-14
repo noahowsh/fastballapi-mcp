@@ -1,0 +1,37 @@
+{
+  "name": "fastballapi-skills",
+  "version": "1.0.0",
+  "description": "16 Claude skills for baseball analytics and betting models with FastballAPI: data lookups, metrics, feature engineering, walk-forward validation, devigging, edge detection and backtests.",
+  "author": {
+    "name": "FastballAPI",
+    "url": "https://fastballapi.com"
+  },
+  "homepage": "https://fastballapi.com/skills",
+  "repository": "https://github.com/noahowsh/fastballapi-mcp",
+  "license": "MIT",
+  "keywords": [
+    "baseball",
+    "mlb",
+    "sports-analytics",
+    "sports-betting",
+    "sports-data",
+    "odds",
+    "backtesting",
+    "fastballapi"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "FastballAPI Skills",
+    "shortDescription": "MLB baseball data and betting-model skills",
+    "longDescription": "Skills and a remote MCP server for MLB baseball analytics with FastballAPI: data lookups, metrics, feature engineering, walk-forward validation, devigging, edge detection and backtests.",
+    "developerName": "FastballAPI",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://fastballapi.com",
+    "privacyPolicyURL": "https://fastballapi.com/privacy",
+    "termsOfServiceURL": "https://fastballapi.com/terms"
+  }
+}

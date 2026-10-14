@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "fastballapi": {
+      "type": "http",
+      "url": "https://mcp.fastballapi.com/mcp",
+      "bearer_token_env_var": "FASTBALLAPI_API_KEY"
+    }
+  }
+}
