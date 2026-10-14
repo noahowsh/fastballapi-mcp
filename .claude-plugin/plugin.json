@@ -5,7 +5,22 @@
   "author": {
     "name": "FastballAPI"
   },
-  "homepage": "https://fastballapi.com",
+  "homepage": "https://fastballapi.com/skills",
   "repository": "https://github.com/noahowsh/fastballapi-mcp",
-  "license": "MIT"
+  "license": "MIT",
+  "displayName": "FastballAPI Skills",
+  "documentationUrl": "https://fastballapi.com/docs",
+  "privacyPolicyUrl": "https://fastballapi.com/privacy",
+  "termsOfServiceUrl": "https://fastballapi.com/terms",
+  "supportUrl": "mailto:support@fastballapi.com",
+  "keywords": [
+    "baseball",
+    "mlb",
+    "sports-analytics",
+    "sports-betting",
+    "sports-data",
+    "odds",
+    "backtesting",
+    "fastballapi"
+  ]
 }
