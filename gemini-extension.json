@@ -1,0 +1,14 @@
+{
+  "name": "fastballapi",
+  "version": "1.0.0",
+  "description": "FastballAPI MCP server for MLB baseball data: schedules, results, stats and odds.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "fastballapi": {
+      "httpUrl": "https://mcp.fastballapi.com/mcp",
+      "headers": {
+        "x-api-key": "${FASTBALLAPI_API_KEY}"
+      }
+    }
+  }
+}
