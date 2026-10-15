@@ -36,6 +36,30 @@ Or with the skills CLI: `npx skills add noahowsh/fastballapi-mcp`.
 
 Point Claude at the `skills/` folder, connect the MCP server below, and ask. The `dispatch` skill routes a request to the right two or three skills. Full list: [`skills/README.md`](skills/README.md).
 
+## Python
+
+The official Python client is on PyPI: [fastballapi](https://pypi.org/project/fastballapi/).
+
+```bash
+pip install fastballapi
+export FASTBALLAPI_API_KEY=sk_live_...
+```
+
+```python
+from fastballapi import Client, to_dataframe
+
+client = Client()
+
+props = client.get_player_props(
+    game_id="401815991",
+    market="batter_home_runs",
+)
+df = to_dataframe(props, key="props")
+print(df[["player_name", "bookmaker", "line", "over_odds", "under_odds"]].head(10))
+```
+
+Typed errors for a bad key, no credits left, not found and rate limits, automatic retries, and `to_dataframe` for pandas.
+
 ## Quick start
 
 This is a hosted (remote) MCP server over Streamable HTTP. There is nothing to install.
