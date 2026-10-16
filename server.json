@@ -26,7 +26,7 @@
       "headers": [
         {
           "name": "x-api-key",
-          "description": "Your FastballAPI API key. Get a free key with 500 credits at fastballapi.com/signup",
+          "description": "Your FastballAPI API key. Get a free key (500 credits every month) at fastballapi.com/signup",
           "isRequired": true,
           "isSecret": true
         }
