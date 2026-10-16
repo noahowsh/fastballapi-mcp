@@ -3,7 +3,7 @@
   "name": "io.github.noahowsh/fastballapi",
   "title": "FastballAPI",
   "description": "MLB since 2015 plus college: pitches, plate appearances, box scores, odds by book. REST and MCP.",
-  "version": "1.1.4",
+  "version": "1.1.6",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/noahowsh/fastballapi-mcp",

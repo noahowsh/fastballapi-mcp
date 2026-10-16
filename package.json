@@ -1,6 +1,6 @@
 {
   "name": "fastballapi-mcp",
-  "version": "1.0.0",
+  "version": "1.1.6",
   "description": "MLB since 2015 plus college: pitches, plate appearances, box scores, odds by book. REST and MCP.",
   "type": "module",
   "main": "index.js",
