@@ -17,6 +17,22 @@ You:    "How often has Shohei Ohtani gone over his total bases line since 2023?"
 Claude: [calls get_prop_history]
 ```
 
+
+## Run it locally (stdio)
+
+Most clients connect to `https://mcp.fastballapi.com/mcp` directly. For a client that launches a local process instead:
+
+```bash
+git clone https://github.com/noahowsh/fastballapi-mcp.git && cd fastballapi-mcp && npm install
+FASTBALLAPI_API_KEY=your_key node index.js
+```
+
+```json
+{ "mcpServers": { "fastballapi": { "command": "node", "args": ["/path/to/fastballapi-mcp/index.js"], "env": { "FASTBALLAPI_API_KEY": "your_key" } } } }
+```
+
+It forwards to the hosted server with your key, so every tool and credit cost is the same.
+
 ## Skills
 
 This repo also ships 16 free Claude skills in [`skills/`](skills/) that turn Claude into a baseball analyst: pitch mix and whiff rate, run value, spray charts, Pythagorean record, game previews, odds analysis, prop modeling (pitcher strikeouts, hits, total bases), edge detection and backtesting. Each skill names the FastballAPI tools it calls and what they cost.
