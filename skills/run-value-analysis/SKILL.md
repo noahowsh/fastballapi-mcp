@@ -128,7 +128,7 @@ for pa in pas:                              # a whole game, in order
     prev = wp
 ```
 
-The home team bats in the bottom half, so a rise in home win probability is good for the batter in the bottom and bad for the batter in the top. The first plate appearance has no previous value; the API does not give a pre-game win probability, so skip it or take the pre-game line from `get_odds`. Large swings in the 8th and 9th innings are normal, not noise.
+The home team bats in the bottom half, so a rise in home win probability is good for the batter in the bottom and bad for the batter in the top. The first plate appearance has no previous value; the API does not give a pre-game win probability, so skip it or take the pre-game line from `get_odds`. Win probability is a licensed third-party model, not ours. Large swings in the 8th and 9th innings are normal, not noise.
 
 **Step 6: Decide what to say.** Run value rewards both skill and opportunity. A leadoff hitter with the same ability gets fewer runners on than a number-four hitter. For skill, use rate stats and discipline; for what happened, use RE24. Say which you are reporting.
 
