@@ -120,7 +120,7 @@ plt.scatter([b["x"] for b in balls], [b["y"] for b in balls],
 plt.gca().invert_yaxis()
 ```
 
-Each entry in `balls` has `x`, `y`, `trajectory` and `result` (real examples: `{"x": 103, "y": 80, "trajectory": "L", "result": "line-out"}`, `{"x": 15, "y": 43, "trajectory": "F", "result": "home-run"}`). In the live call, 409 of 410 balls had coordinates. The response's `balls_note` gives the frame: ESPN's spray image is 250 x 250 pixels, home plate near (125, 205), with y decreasing toward center field. That is an image frame, so inverting the y axis in the plot (as above) puts home plate at the bottom. These are pixels, not feet: do not convert to distances. The only distances in the data are in the `description` text of home runs in `get_plate_appearances`.
+Each entry in `balls` has `x`, `y`, `trajectory` and `result` (real examples: `{"x": 103, "y": 80, "trajectory": "L", "result": "line-out"}`, `{"x": 15, "y": 43, "trajectory": "F", "result": "home-run"}`). In the live call, 409 of 410 balls had coordinates. The response's `balls_note` gives the frame: the spray image is 250 x 250 pixels, home plate near (125, 205), with y decreasing toward center field. That is an image frame, so inverting the y axis in the plot (as above) puts home plate at the bottom. These are pixels, not feet: do not convert to distances. The only distances in the data are in the `description` text of home runs in `get_plate_appearances`.
 
 **Step 6: Team spray.** `team` instead of `batter_id` returns the same aggregates for a lineup. Use it to compare how two clubs hit: fly-ball share and pull share explain a lot of the home run difference between clubs, along with parks (not in the data).
 
@@ -148,7 +148,7 @@ Each entry in `balls` has `x`, `y`, `trajectory` and `result` (real examples: `{
 |---------|-----------------|---------|
 | Calling a ball "hard hit" | No exit velocity | Say line drive or fly ball |
 | Treating `balls_in_play` as excluding HR | It includes them | Subtract `hr` |
-| Treating `x`, `y` as feet | ESPN's frame | Plot relatively |
+| Treating `x`, `y` as feet | Image frame | Plot relatively |
 | Labeling pull for a switch-hitter without splitting | Side varies by pitcher | Split by batter side first (play-by-play) |
 | Quoting HR/FB as a talent level after one season | High variance | Combine seasons |
 | Applying this to a college hitter | No batted-ball locations for college | Say it is not available |

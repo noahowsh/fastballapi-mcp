@@ -66,7 +66,7 @@ MLB only. College baseball has no props.
 ```json
 {"data": {"snapshot_type": "closing", "games": 1, "props": [
  {"game_id": "401697253", "game_date": "2025-09-23", "player_name": "Tarik Skubal", "market": "pitcher_strikeouts",
-  "bookmaker": "draftkings", "line": 7.5, "over_odds": -146, "under_odds": 115, "source": "the_odds_api"},
+  "bookmaker": "draftkings", "line": 7.5, "over_odds": -146, "under_odds": 115, "source": "archive"},
  {"bookmaker": "betmgm", "line": 7.5, "over_odds": -150, "under_odds": 115},
  {"bookmaker": "fanduel", "line": 7.5, "over_odds": -132, "under_odds": 100}]}}
 ```

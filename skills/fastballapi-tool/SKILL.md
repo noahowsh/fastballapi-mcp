@@ -81,16 +81,16 @@ Code examples in these skills write `get_x(**args)` for a thin helper that POSTs
 
 - **MLB games and box scores:** 2015 to the current season. Pitch-by-pitch: every pitch since 2018, and about 98 to 99% of each season's pitches for 2015 to 2017. Pitch type and velocity are on 96% or more of pitches (99.8% or more from 2020).
 - **Win probability** on plate appearances starts in 2019. Earlier seasons return null.
-- **Sportsbook lines:** 4 to 13 books per game from 2015 to 2023; opening and closing lines per book from July 2020 (The Odds API), and from 2024 from ESPN too. Before July 2020, only ESPN's final line. Check https://fastballapi.com/docs/atlas for the live per-season counts before you promise a backtest window.
+- **Sportsbook lines:** 4 to 13 books per game from 2015 to 2023; opening and closing lines per book from July 2020. Before July 2020, only a final line. Check https://fastballapi.com/docs/atlas for the live per-season counts before you promise a backtest window.
 - **Player props:** from May 2023. Markets: `batter_hits`, `batter_home_runs`, `batter_total_bases`, `batter_rbis`, `pitcher_strikeouts`, `pitcher_outs`. No props for college.
-- **College baseball** (`league: "ncaabase"`): the Division I games ESPN carries, not every game. No pitch rows, no spray charts, no injuries, no props. Box scores and play-by-play exist for part of each season (about 800 to 1,550 games a season since 2021). Sportsbook lines from 2023.
+- **College baseball** (`league: "ncaabase"`): the Division I games we cover, not every game. No pitch rows, no spray charts, no injuries, no props. Box scores and play-by-play exist for part of each season (about 800 to 1,550 games a season since 2021). Sportsbook lines from 2023.
 - `get_pitches`, `get_pitch_mix`, `get_spray_chart`, `get_injuries`, `get_player_props` and `get_prop_history` take no `league` argument. They are MLB only.
 
 ## Identifiers
 
 - **Teams:** abbreviation (`NYY`, `LAD`) or team id. Call `list_teams` once to confirm; the Athletics abbreviate as `ATH` in recent seasons.
-- **Players:** the ESPN athlete id as a string. Always get it from `search_players`. Do not guess ids. Judge is `33192`, Skubal `42409`, found that way.
-- **Games:** the ESPN game id as a string (`401809265`), from `get_games` or `get_schedule`.
+- **Players:** the player id as a string. Always get it from `search_players`. Do not guess ids. Judge is `33192`, Skubal `42409`, found that way.
+- **Games:** the game id as a string (`401809265`), from `get_games` or `get_schedule`.
 - **Seasons:** a four-digit year. Omit `season` for the latest. MLB regular season runs late March to September, postseason in October, so "this season" in November is the year just finished.
 
 ## Cost Planning

@@ -2,7 +2,7 @@
 
 [![Smithery](https://img.shields.io/badge/Smithery-listed-ff5601?style=flat-square)](https://smithery.ai/servers/noahowsh/FastballAPI) [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-listed-0b7285?style=flat-square)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.noahowsh/fastballapi)
 
-**The baseball data API.** Pitch-by-pitch data with pitch type, velocity and location, every plate appearance with base-out state and the batted ball, box scores, standings, our own ratings and run values, sportsbook lines by book and MLB player prop lines. MLB since 2015 plus the NCAA Division I games ESPN carries. REST API and MCP server. 500 free credits every month, no card.
+**The baseball data API.** Pitch-by-pitch data with pitch type, velocity and location, every plate appearance with base-out state and the batted ball, box scores, standings, our own ratings and run values, sportsbook lines by book and MLB player prop lines. MLB since 2015 plus the NCAA Division I games we cover. REST API and MCP server. 500 free credits every month, no card.
 
 Website: https://fastballapi.com · Docs: https://fastballapi.com/docs · Get a key: https://fastballapi.com/signup
 
@@ -148,15 +148,15 @@ See [`examples/README.md`](examples/README.md) for details. Get a free key (500 
 | `get_player_props` | Player prop lines by sportsbook, opening and closing |
 | `get_prop_history` | A player's prop lines against the result, game by game |
 
-Leagues: mlb (default), ncaabase (NCAA Division I games ESPN carries; pitch tools, spray charts and injuries are not offered for college).
+Leagues: mlb (default), ncaabase (NCAA Division I games we cover; pitch tools, spray charts and injuries are not offered for college).
 
 ## Data
 
 - MLB games since 2015 with pitch-by-pitch data (every pitch from 2018; 2015 to 2017 have about 98 to 99% of each season's pitches)
 - Every plate appearance with base-out state, batted ball, win probability and RE24
-- Per-sportsbook moneylines, run lines and totals: 4 to 13 books per game from 2015 to 2023 (about 4 in 2015, 10 in 2016 and 2017, 7 to 8 in 2018 to 2020, 12 in 2021 to 2023), usually one book since 2024 in ESPN's own feed, plus opening and closing lines from The Odds API since July 2020 (a median of 7 books in 2021 to 2023 and 8 since 2024); pre-game line snapshots from launch: ESPN's once a day, The Odds API's every hour for games in the next two days
+- Per-sportsbook moneylines, run lines and totals: 4 to 13 books per game from 2015 to 2023 (about 4 in 2015, 10 in 2016 and 2017, 7 to 8 in 2018 to 2020, 12 in 2021 to 2023), usually one book since 2024, plus opening and closing lines since July 2020 (a median of 7 books in 2021 to 2023 and 8 since 2024); pre-game line snapshots from launch: once a day, and every hour for games in the next two days
 - MLB player prop lines by sportsbook (hits, home runs, total bases, RBI, pitcher strikeouts, pitcher outs) from May 2023, with the result against each line (`get_player_props`, `get_prop_history`); none for college
-- NCAA Division I college baseball for the games ESPN carries (not every Division I game)
+- NCAA Division I college baseball for the games we cover (not every Division I game)
 
 Coverage by season, read live from the database: https://fastballapi.com/docs
 
@@ -168,7 +168,7 @@ Coverage by season, read live from the database: https://fastballapi.com/docs
 - [MLB player props today](https://fastballapi.com/props): hits, home runs, total bases, RBIs and pitcher strikeouts, best price per player across books
 - [Guides](https://fastballapi.com/guides): pitch data for a model, pitch mix and whiff rate, Pythagorean standings, run value with runners in scoring position, spray charts
 - [Data](https://fastballapi.com/data): [pitch-by-pitch](https://fastballapi.com/data/mlb-pitch-by-pitch), [spray charts](https://fastballapi.com/data/mlb-spray-chart-data), [odds history](https://fastballapi.com/data/mlb-odds-history), [player props](https://fastballapi.com/data/player-props)
-- [College baseball](https://fastballapi.com/college-baseball): the NCAA Division I games ESPN carries
+- [College baseball](https://fastballapi.com/college-baseball): the NCAA Division I games we cover
 - [Pricing](https://fastballapi.com/pricing): free tier and paid plans
 - Comparisons: [vs pybaseball](https://fastballapi.com/compare/pybaseball), [vs BallDontLie](https://fastballapi.com/compare/balldontlie-mlb), [vs Sportradar](https://fastballapi.com/compare/sportradar-mlb), [vs the MLB Stats API](https://fastballapi.com/compare/mlb-stats-api)
 - [Glossary](https://fastballapi.com/glossary)
@@ -179,7 +179,7 @@ Coverage by season, read live from the database: https://fastballapi.com/docs
 
 ## Attribution
 
-Baseball data from public ESPN data; sportsbook lines and player props from ESPN and The Odds API. Ratings and run values are ours. Not affiliated with MLB, the NCAA or any team.
+Ratings and run values are ours. Not affiliated with MLB, the NCAA or any team.
 
 ## License
 

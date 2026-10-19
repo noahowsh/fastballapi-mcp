@@ -51,9 +51,9 @@ You report what the books posted, find the best price, and read movement without
 
 ## Coverage
 
-- Per-book opening and closing lines from July 2020 (The Odds API), and from 2024 ESPN's feed as well. Before July 2020, only ESPN's final line.
+- Per-book opening and closing lines from July 2020. Before July 2020, only a final line.
 - Books per game: 4 to 13 from 2015 to 2023; 6 to 8 with opening and closing since July 2020. The book list in a response is the truth: do not assume Pinnacle or FanDuel is present for an old game. Live per-season counts: https://fastballapi.com/docs/atlas.
-- Pre-game snapshots (`get_line_movement`) are ESPN's once a day and The Odds API's hourly for games in the next two days. That is coarse: a steam move between two snapshots is invisible.
+- Pre-game snapshots (`get_line_movement`) are once a day, and hourly for games in the next two days. That is coarse: a steam move between two snapshots is invisible.
 - College lines start in 2023, a median of 5 or 6 books per game, some with one.
 
 ## How It Works

@@ -53,8 +53,8 @@ You read a pitcher's arsenal the way a scout reads a scouting report: what he th
 - Every pitch since 2018. For 2015 to 2017, about 98 to 99% of each season's pitches.
 - Pitch type and velocity are on 96% or more of each season's pitches, and 99.8% or more from 2020.
 - Automatic balls and strikes (intentional walks, pitch-timer violations) are not pitches.
-- `px` and `py` are ESPN's pitch-location frame in pixels, as sent. They are not feet and the strike zone boundaries are not given. Use them for relative location (up/down, in/out) within one pitcher, not for zone-rate claims against an official zone.
-- Pitch type labels are ESPN's feed classifications (FF, SI, FC, SL, CH, CU, KC). Some pitchers' four-seam and sinker labels blur.
+- `px` and `py` are the pitch-location frame in pixels, as sent. They are not feet and the strike zone boundaries are not given. Use them for relative location (up/down, in/out) within one pitcher, not for zone-rate claims against an official zone.
+- Pitch type labels are the feed's classifications (FF, SI, FC, SL, CH, CU, KC). Some pitchers' four-seam and sinker labels blur.
 
 ## How It Works
 

@@ -137,7 +137,7 @@ Use only teams with a meaningful number of games.
 
 ## College Baseball
 
-`league: "ncaabase"`. The standings list every team ESPN carries, in win-pct order, including teams with a few games. A 3-0 team with 31 runs for and 10 against has a Pythagorean of .888: meaningless at that sample. Filter on games played (for example at least 30) before sorting. ESPN does not carry every Division I game, so runs and records can be partial. Fit the exponent on the filtered set, since college run environments are higher than MLB.
+`league: "ncaabase"`. The standings list every team we cover, in win-pct order, including teams with a few games. A 3-0 team with 31 runs for and 10 against has a Pythagorean of .888: meaningless at that sample. Filter on games played (for example at least 30) before sorting. we do not cover every Division I game, so runs and records can be partial. Fit the exponent on the filtered set, since college run environments are higher than MLB.
 
 ## Sample Size Reality
 

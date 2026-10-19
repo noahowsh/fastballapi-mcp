@@ -51,7 +51,7 @@ You try to falsify the strategy. A backtest that cannot lose proves nothing. Eve
 
 ## Coverage That Limits the Test
 
-- Per-book opening and closing lines: July 2020 onward (The Odds API), plus ESPN's from 2024. Before that, only ESPN's final line, so you cannot measure CLV before mid-2020.
+- Per-book opening and closing lines: July 2020 onward. Before that, only a final line, so you cannot measure CLV before mid-2020.
 - Number of books varies by year. A strategy that shops "the best price" gets a different book set in 2021 than in 2025. State the book set.
 - Props: May 2023 onward; markets hits, home runs, total bases, RBI, pitcher strikeouts, pitcher outs. No props for college.
 - The 2020 season has 60 games per team and unusual conditions. Report it separately or exclude it, and say which.

@@ -140,7 +140,7 @@ Pooled:             mean difference and a bootstrap 95% interval over games
 Calibration:        decile table on pooled test predictions
 ```
 
-Odds exist per book from July 2020 and as ESPN's final line earlier (see `fastballapi-tool`), so the market baseline has a shorter history than results. Say which seasons the comparison covers.
+Odds exist per book from July 2020 and as a final line earlier (see `fastballapi-tool`), so the market baseline has a shorter history than results. Say which seasons the comparison covers.
 
 ## Credit Planning
 

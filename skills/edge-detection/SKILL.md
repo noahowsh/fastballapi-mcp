@@ -132,7 +132,7 @@ clv_points = fair_close_prob(your side) - implied_prob(price you took)
 
 with the close devigged (see `odds-analysis`). If you took the over at -140 (implied 58.3%) and the closing market was fair at 60.5%, your CLV is +2.2 points: you got a better price than the final information justified.
 
-Data you can get from FastballAPI: `get_odds` returns per-book `*_open` and `*_close`; `get_player_props` takes `snapshot_type` of `opening` or `closing`; `get_line_movement` gives snapshots on the way (ESPN's once a day, The Odds API's hourly for the next two days). The early price you actually bet at is your own log (see the staking record you keep); a stored opening line is only a proxy.
+Data you can get from FastballAPI: `get_odds` returns per-book `*_open` and `*_close`; `get_player_props` takes `snapshot_type` of `opening` or `closing`; `get_line_movement` gives snapshots on the way (once a day, hourly for the next two days). The early price you actually bet at is your own log (see the staking record you keep); a stored opening line is only a proxy.
 
 Interpret it honestly:
 - Positive CLV over 200+ bets is a good sign your process sees something early.

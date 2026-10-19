@@ -92,7 +92,7 @@ End-of-season Elo is a mild look-ahead for early-season games; say so. Postseaso
 
 ## College Baseball
 
-Pass `league: "ncaabase"`. `get_standings`, `get_ratings` and `get_team_stats` work. There are no conference-adjusted ratings beyond our Elo, schedules differ enormously in strength, and ESPN does not carry every Division I game, so records may be incomplete. Always show games played next to the record. The college standings list every team ESPN carries, sorted by win percentage, so a team with 3 games and a 3-0 record can top the list. Filter on games played (wins plus losses) before ranking anything.
+Pass `league: "ncaabase"`. `get_standings`, `get_ratings` and `get_team_stats` work. There are no conference-adjusted ratings beyond our Elo, schedules differ enormously in strength, and we do not cover every Division I game, so records may be incomplete. Always show games played next to the record. The college standings list every team we cover, sorted by win percentage, so a team with 3 games and a 3-0 record can top the list. Filter on games played (wins plus losses) before ranking anything.
 
 ## Credit Usage
 
