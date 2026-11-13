@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "fastballapi-skills",
-      "source": "./",
+      "source": "./plugin",
       "description": "16 baseball analytics and betting-model skills"
     }
   ]
