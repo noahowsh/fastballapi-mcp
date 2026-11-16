@@ -123,7 +123,15 @@ node examples/node/quickstart.mjs
 
 See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://fastballapi.com/signup.
 
-## Tools (20)
+## Use it in
+
+- **Claude, ChatGPT, Cursor, VS Code, Gemini CLI, Grok, Perplexity, Le Chat:** add `https://mcp.fastballapi.com/mcp` as a remote MCP server. Step-by-step for each: https://fastballapi.com/mcp
+- **Gemini CLI:** `gemini extensions install https://github.com/noahowsh/fastballapi-mcp`
+- **Cursor:** the [SportsDataHQ plugins for Cursor](https://github.com/noahowsh/sportsdatahq-cursor-plugins)
+- **Google Sheets:** `=SDHQ("fastballapi","list_teams")` fills a live table: https://sportsdatahq.com/sheets
+- **REST:** `POST https://mcp.fastballapi.com/v1/<tool>` with an `x-api-key` header: https://fastballapi.com/docs
+
+## Tools (23)
 
 | Tool | What it returns |
 |------|-----------------|
@@ -145,8 +153,11 @@ See [`examples/README.md`](examples/README.md) for details. Get a free key (500 
 | `get_pitches` | Pitch-by-pitch: count, type, velocity, location, result |
 | `get_spray_chart` | Where a batter or team hits the ball, by trajectory and field |
 | `get_line_movement` | Snapshots of each sportsbook's line before first pitch |
-| `get_player_props` | Player prop lines by sportsbook, opening and closing |
+| `get_player_props` | Player prop lines by sportsbook: the closing line (one pre-game capture per line before October 2026) |
 | `get_prop_history` | A player's prop lines against the result, game by game |
+| `get_prop_movement` | How one player's prop line moved before a game, every capture by sportsbook |
+| `get_market_odds` | Opening and closing lines by sportsbook for the first-5-innings and first-inning markets (history from May 2023) |
+| `get_alt_lines` | Alternate run lines and totals by sportsbook: every point on each book's ladder, opening and closing, from 2023 |
 
 Leagues: mlb (default), ncaabase (NCAA Division I games we cover; pitch tools, spray charts and injuries are not offered for college).
 
