@@ -4,7 +4,7 @@
 
 **The baseball data API.** Pitch-by-pitch data with pitch type, velocity and location, every plate appearance with base-out state and the batted ball, box scores, standings, our own ratings and run values, sportsbook lines by book and MLB player prop lines. MLB since 2015 plus the NCAA Division I games we cover. REST API and MCP server. 500 free credits every month, no card.
 
-Website: https://fastballapi.com · Docs: https://fastballapi.com/docs · Get a key: https://fastballapi.com/signup
+Website: https://fastballapi.com?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp · Docs: https://fastballapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp · Get a key: https://fastballapi.com/signup?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
 
 ```
 You:    "What is Gerrit Cole's whiff rate by pitch type this season?"
@@ -121,15 +121,15 @@ python3 examples/python/quickstart.py
 node examples/node/quickstart.mjs
 ```
 
-See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://fastballapi.com/signup.
+See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://fastballapi.com/signup.?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
 
 ## Use it in
 
-- **Claude, ChatGPT, Cursor, VS Code, Gemini CLI, Grok, Perplexity, Le Chat:** add `https://mcp.fastballapi.com/mcp` as a remote MCP server. Step-by-step for each: https://fastballapi.com/mcp
+- **Claude, ChatGPT, Cursor, VS Code, Gemini CLI, Grok, Perplexity, Le Chat:** add `https://mcp.fastballapi.com/mcp` as a remote MCP server. Step-by-step for each: https://fastballapi.com/mcp?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
 - **Gemini CLI:** `gemini extensions install https://github.com/noahowsh/fastballapi-mcp`
 - **Cursor:** the [SportsDataHQ plugins for Cursor](https://github.com/noahowsh/sportsdatahq-cursor-plugins)
-- **Google Sheets:** `=SDHQ("fastballapi","list_teams")` fills a live table: https://sportsdatahq.com/sheets
-- **REST:** `POST https://mcp.fastballapi.com/v1/<tool>` with an `x-api-key` header: https://fastballapi.com/docs
+- **Google Sheets:** `=SDHQ("fastballapi","list_teams")` fills a live table: https://sportsdatahq.com/sheets?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
+- **REST:** `POST https://mcp.fastballapi.com/v1/<tool>` with an `x-api-key` header: https://fastballapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
 
 ## Tools (23)
 
@@ -169,24 +169,24 @@ Leagues: mlb (default), ncaabase (NCAA Division I games we cover; pitch tools, s
 - MLB player prop lines by sportsbook (hits, home runs, total bases, RBI, pitcher strikeouts, pitcher outs) from May 2023, with the result against each line (`get_player_props`, `get_prop_history`); none for college
 - NCAA Division I college baseball for the games we cover (not every Division I game)
 
-Coverage by season, read live from the database: https://fastballapi.com/docs
+Coverage by season, read live from the database: https://fastballapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
 
 ## Useful pages
 
-- [Docs](https://fastballapi.com/docs): every endpoint with parameters and a live example response
-- [Data atlas](https://fastballapi.com/docs/atlas): what exists, which tool exposes it, coverage by season
-- [MLB odds](https://fastballapi.com/odds): upcoming moneylines, run lines and totals by sportsbook
-- [MLB player props today](https://fastballapi.com/props): hits, home runs, total bases, RBIs and pitcher strikeouts, best price per player across books
-- [Guides](https://fastballapi.com/guides): pitch data for a model, pitch mix and whiff rate, Pythagorean standings, run value with runners in scoring position, spray charts
-- [Data](https://fastballapi.com/data): [pitch-by-pitch](https://fastballapi.com/data/mlb-pitch-by-pitch), [spray charts](https://fastballapi.com/data/mlb-spray-chart-data), [odds history](https://fastballapi.com/data/mlb-odds-history), [player props](https://fastballapi.com/data/player-props)
-- [College baseball](https://fastballapi.com/college-baseball): the NCAA Division I games we cover
-- [Pricing](https://fastballapi.com/pricing): free tier and paid plans
-- Comparisons: [vs pybaseball](https://fastballapi.com/compare/pybaseball), [vs BallDontLie](https://fastballapi.com/compare/balldontlie-mlb), [vs Sportradar](https://fastballapi.com/compare/sportradar-mlb), [vs the MLB Stats API](https://fastballapi.com/compare/mlb-stats-api)
-- [Glossary](https://fastballapi.com/glossary)
+- [Docs](https://fastballapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp): every endpoint with parameters and a live example response
+- [Data atlas](https://fastballapi.com/docs/atlas?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp): what exists, which tool exposes it, coverage by season
+- [MLB odds](https://fastballapi.com/odds?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp): upcoming moneylines, run lines and totals by sportsbook
+- [MLB player props today](https://fastballapi.com/props?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp): hits, home runs, total bases, RBIs and pitcher strikeouts, best price per player across books
+- [Guides](https://fastballapi.com/guides?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp): pitch data for a model, pitch mix and whiff rate, Pythagorean standings, run value with runners in scoring position, spray charts
+- [Data](https://fastballapi.com/data?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp): [pitch-by-pitch](https://fastballapi.com/data/mlb-pitch-by-pitch?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp), [spray charts](https://fastballapi.com/data/mlb-spray-chart-data?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp), [odds history](https://fastballapi.com/data/mlb-odds-history?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp), [player props](https://fastballapi.com/data/player-props?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp)
+- [College baseball](https://fastballapi.com/college-baseball?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp): the NCAA Division I games we cover
+- [Pricing](https://fastballapi.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp): free tier and paid plans
+- Comparisons: [vs pybaseball](https://fastballapi.com/compare/pybaseball?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp), [vs BallDontLie](https://fastballapi.com/compare/balldontlie-mlb?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp), [vs Sportradar](https://fastballapi.com/compare/sportradar-mlb?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp), [vs the MLB Stats API](https://fastballapi.com/compare/mlb-stats-api?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp)
+- [Glossary](https://fastballapi.com/glossary?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp)
 
 ## Pricing
 
-500 free credits every month, no card. Plans: Starter $19/mo (10,000 credits), Pro $49/mo (30,000), Scale $149/mo (125,000). Wallet top-ups from $5, never expire. https://fastballapi.com/pricing
+500 free credits every month, no card. Plans: Starter $19/mo (10,000 credits), Pro $49/mo (30,000), Scale $149/mo (125,000). Wallet top-ups from $5, never expire. https://fastballapi.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
 
 ## Attribution
 
@@ -204,7 +204,7 @@ Add this repo as a Codex plugin marketplace, then install the plugin:
 codex plugin marketplace add noahowsh/fastballapi-mcp
 ```
 
-Then open the plugin directory in Codex and install `fastballapi-skills` from the `fastballapi` marketplace. The plugin bundles the skills in `skills/` and the FastballAPI MCP server (https://mcp.fastballapi.com/mcp). Set your key first (free at https://fastballapi.com/signup):
+Then open the plugin directory in Codex and install `fastballapi-skills` from the `fastballapi` marketplace. The plugin bundles the skills in `skills/` and the FastballAPI MCP server (https://mcp.fastballapi.com/mcp). Set your key first (free at https://fastballapi.com/signup?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp):
 
 ```bash
 export FASTBALLAPI_API_KEY=your_key
@@ -219,4 +219,4 @@ export FASTBALLAPI_API_KEY=your_key
 gemini extensions install https://github.com/noahowsh/fastballapi-mcp
 ```
 
-The extension adds the FastballAPI MCP server (https://mcp.fastballapi.com/mcp) and sends the key in the `x-api-key` header. Get a free key (500 credits a month) at https://fastballapi.com/signup.
+The extension adds the FastballAPI MCP server (https://mcp.fastballapi.com/mcp) and sends the key in the `x-api-key` header. Get a free key (500 credits a month) at https://fastballapi.com/signup.?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
