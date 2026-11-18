@@ -121,7 +121,7 @@ python3 examples/python/quickstart.py
 node examples/node/quickstart.mjs
 ```
 
-See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://fastballapi.com/signup.?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
+See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://fastballapi.com/signup?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp.
 
 ## Use it in
 
@@ -219,4 +219,4 @@ export FASTBALLAPI_API_KEY=your_key
 gemini extensions install https://github.com/noahowsh/fastballapi-mcp
 ```
 
-The extension adds the FastballAPI MCP server (https://mcp.fastballapi.com/mcp) and sends the key in the `x-api-key` header. Get a free key (500 credits a month) at https://fastballapi.com/signup.?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
+The extension adds the FastballAPI MCP server (https://mcp.fastballapi.com/mcp) and sends the key in the `x-api-key` header. Get a free key (500 credits a month) at https://fastballapi.com/signup?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp.
