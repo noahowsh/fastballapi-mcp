@@ -123,6 +123,10 @@ node examples/node/quickstart.mjs
 
 See [`examples/README.md`](examples/README.md) for details. Get a free key (500 credits a month, no card) at https://fastballapi.com/signup?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp.
 
+## Starter projects
+
+- [mlb-pitch-mix](https://github.com/noahowsh/mlb-pitch-mix): a pitcher's arsenal, what he throws in each count and his velocity by inning, in one Python script.
+
 ## Use it in
 
 - **Claude, ChatGPT, Cursor, VS Code, Gemini CLI, Grok, Perplexity, Le Chat:** add `https://mcp.fastballapi.com/mcp` as a remote MCP server. Step-by-step for each: https://fastballapi.com/mcp?utm_source=github&utm_medium=readme&utm_campaign=fastballapi-mcp
